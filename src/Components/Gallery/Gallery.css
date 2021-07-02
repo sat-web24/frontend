@@ -1,0 +1,42 @@
+.gallery {
+	background-color: #010104;
+	padding: 100px 50px;
+	color: white;
+}
+
+.gallery_heading {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.gallery_container {
+	grid-template-columns: 1fr;
+	grid-row-gap: 70px;
+}
+
+.gallery_img {
+	grid-column: span 1;
+	width: 85%;
+	max-width: 300px;
+	margin: 0px auto;
+	object-fit: cover;
+}
+
+
+@media (min-width: 900px) {
+	.gallery {
+		padding: 100px;
+	}
+	.gallery_container {
+		grid-template-columns: 1fr 1fr;
+	}
+	.gallery_img {
+		height: 200px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.gallery_container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

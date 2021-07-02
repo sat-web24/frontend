@@ -1,0 +1,23 @@
+.about {
+	background-color: #010104;
+	padding: 100px 10%;
+	color: white;
+}
+
+.about_title {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 30px;
+	font-size: clamp(4rem, 7vw, 2rem);
+}
+
+.about_content {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: 0.45px;
+	line-height: 25px;
+}
+
+.about_thought {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}

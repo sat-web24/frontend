@@ -1,0 +1,54 @@
+.APOD_container {
+	width: 80%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.APOD_img {
+	width: 100%;
+	max-width: 415px;
+	max-height: 500px;
+	border: 5px solid white;
+}
+
+.APOD_content {
+	flex-direction: column;
+	margin: 2rem 0px;
+}
+
+.APOD_title {
+	font-size: 1.8rem;
+	line-height: 1.6rem;
+}
+
+.APOD_date {
+	margin-top: 0.3rem;
+	margin-bottom: 1.1rem;
+}
+
+.APOD_exp {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.01rem;
+	line-height: 1.21rem;
+	word-spacing: 0.07rem;
+	color: white;
+}
+
+@media (min-width: 1310px) {
+	.APOD_img {
+		max-height: 450px;
+	}
+	.APOD_container {
+		flex-direction: row;
+	}
+	.APOD_content {
+		margin: 0px 4rem;
+	}
+	.APOD_exp {
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 0.02rem;
+		font-size: 1.15rem;
+		line-height: 1.4rem;
+		color: white;
+	}
+}

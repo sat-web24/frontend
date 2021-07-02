@@ -1,0 +1,125 @@
+a {
+	text-decoration: none;
+}
+
+.nav {
+	width: 100%;
+	padding: 10px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: transparent;
+	position: fixed;
+	/*position: sticky;*/
+	z-index: 9999;
+	transition: background 0.5s;
+}
+
+.nav.active {
+	background-color: black;
+}
+
+.nav_items {
+	flex-grow: 1;
+	align-items: center;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+.nav_item {
+	margin: 0px 20px;
+	color: white;
+}
+
+.nav_link {
+	color: inherit;
+}
+
+.hamburger {
+	display: none;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	width: 45px;
+	height: 55px;
+	cursor: pointer;
+}
+
+.hamburger_lines,
+.hamburger_lines::before,
+.hamburger_lines::after {
+	width: 45px;
+	height: 8px;
+	border-radius: 10px;
+	background-color: white;
+	transition: transform 0.5s ease-in-out;
+}
+
+.hamburger_lines::before,
+.hamburger_lines::after {
+	content: "";
+	position: absolute;
+}
+
+.hamburger_lines::before {
+	transform: translateY(-13px);
+}
+
+.hamburger_lines::after {
+	transform: translateY(13px);
+}
+
+.hamburger.open .hamburger_lines {
+	/*transform: translateX(2rem);*/
+	/*background-color: transparent;*/
+}
+
+.hamburger.open .hamburger_lines::before {
+	/*transform: rotate(45deg) translate(-1.5rem, 1.5rem);*/
+}
+
+.hamburger.open .hamburger_lines::after {
+	/*transform: rotate(-45deg) translate(-1.5rem, -1.5rem);*/
+}
+
+
+@media (max-width: 750px) {
+	.nav_items {
+		transform: translateX(100vw);
+		/*display: none;*/
+		position: absolute;
+		right: 0;
+		top: 0; 
+		height: 100vh;
+		width: 55%;
+		padding-top: 80px;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background-color: #2B7DB5;
+		transition: transform 0.3s ease-in-out;
+		/*z-index: 9;*/
+	}
+	
+	.nav_items.open {
+		display: flex;
+		transform: translateX(0);
+	}
+
+	.nav_item {
+		width: 100%;
+		padding: 20px 25%;
+		margin: 0px;
+	}
+	.nav_link {
+		width: 100%;
+	}
+
+	.nav_item:hover {
+		background-color: white;
+		color: #2B7DB5;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+}

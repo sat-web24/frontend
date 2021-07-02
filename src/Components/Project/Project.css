@@ -1,0 +1,15 @@
+.project {
+	background-color: #010104;
+	padding: 100px 0;
+	color: white;
+}
+
+.project_title {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.project_list {
+	flex-direction: column;
+	align-items: center;
+}

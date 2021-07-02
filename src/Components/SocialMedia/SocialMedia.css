@@ -1,0 +1,17 @@
+.social {
+	align-items: center;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+
+.social_logo {
+	width: 25px;
+	margin-right: 10px;
+	color: white;
+}
+
+.social_link {
+	font-size: 1.15rem;
+	font-weight: 300;
+	color: white;
+}
